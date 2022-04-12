@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>개발괴발</title>
+    <link>https://rvnkcode.github.io/</link>
+    
+    <atom:link href="https://rvnkcode.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>이번 블로그는 또 얼마나 갈까</description>
+    <pubDate>Tue, 12 Apr 2022 12:35:58 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>mac OS 개발환경 구축하기</title>
+      <link>https://rvnkcode.github.io/2022/02/09/1_devEnv/</link>
+      <guid>https://rvnkcode.github.io/2022/02/09/1_devEnv/</guid>
+      <pubDate>Wed, 09 Feb 2022 12:47:26 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;mac-mini-m1-spec&quot;&gt;&lt;a href=&quot;#mac-mini-m1-spec&quot; class=&quot;headerlink&quot; title=&quot;mac mini m1 spec&quot;&gt;&lt;/a&gt;mac mini m1 spec&lt;/h2&gt;&lt;p&gt;Mac mini(M1, 2</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="mac-mini-m1-spec"><a href="#mac-mini-m1-spec" class="headerlink" title="mac mini m1 spec"></a>mac mini m1 spec</h2><p>Mac mini(M1, 2020), 16gb memory, 512gb ssd</p><h2 id="OS-Update"><a href="#OS-Update" class="headerlink" title="OS Update"></a>OS Update</h2><h2 id="install-xcode-command-line-tools"><a href="#install-xcode-command-line-tools" class="headerlink" title="install xcode command line tools"></a>install xcode command line tools</h2><p>맥에 기본적으로 설치되어있는 터미널을 실행시킨 뒤, 적당히 git 같은 터미널 명령어를 입력한다.<br>(git이 설치되어 있지 않아도 상관 없음)<br>그러면 자동으로 팝업창이 뜨면서, Command Line Tools를 설치할 것인지 묻는데 다운로드해서 설치해주면 끝.</p><h2 id="install-Homebrew"><a href="#install-Homebrew" class="headerlink" title="install Homebrew"></a>install <a href="https://brew.sh/">Homebrew</a></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;</span><br></pre></td></tr></table></figure><p>솔직히 homebrew까지 설치했다면 개발환경 구축은 거의 다 끝난 것이나 다름 없다.<br>여기서부턴 brew list 해서 나온 패키지 목록들.(2022-03-25)  </p><h3 id="formulae"><a href="#formulae" class="headerlink" title="formulae"></a>formulae</h3><ul><li>bat</li><li>fzf</li><li>git</li><li>gh: GitHub on the command line  </li><li>gnupg</li><li>himalaya: email client on cli. vim 플러그인과 연동해서 간단하게 메일 확인하기에 좋다.</li><li>node</li><li>pandoc</li><li>ranger: vim inspired command line file explorer</li><li>ripgrep</li><li>tmux</li><li>trash: move files to trash in terminal. ranger와 연계해서 사용</li><li>universal-ctags: for tagbar vim plugin</li><li>w3m: text-based browser</li><li>xsel: for yank from ranger to clipboard</li></ul><h3 id="casks"><a href="#casks" class="headerlink" title="casks"></a>casks</h3><ul><li>discord</li><li>iterm2</li><li>firefox</li><li>jumpcut: clipboard management tool</li><li>karabiner-elements: keyboard remapping</li><li>obsidian</li><li>raspberry-pi-imager</li><li>rectangle</li><li>slack</li><li>visual-studio-code</li><li>webstorm</li></ul><h2 id="basic-settings-on-macOS"><a href="#basic-settings-on-macOS" class="headerlink" title="basic settings on macOS"></a>basic settings on macOS</h2><p>기본적인 설정은 첫 부팅할 때 잘 해주지만(ex 로케일 설정 등…리눅스에서 건너오니 역시 이렇게 편할 수가 없었다….ㅜ) 그 외에도<br>소소하게 설정이 필요한 부분이 있었다. 사실 하나하나 눌러보면서 설정하면 그만인 부분들이지만 키보드 설정에서 하나를 빼먹었길래 메모해둔다.<br>키보드&gt;단축키 탭에서 하단의 <strong>키보드 탐색을 사용하여 컨트롤 간에 초점 이동</strong>에 체크.</p><h2 id="keyboard-remapping"><a href="#keyboard-remapping" class="headerlink" title="keyboard remapping"></a>keyboard remapping</h2><p>현재 사용하고 있는 키보드는 레오폴드 FC900R 스탠다드 측각 제품이다.<br>개인적으로 해피해킹 키보드 레이아웃을 좋아해서 윈도우, 리눅스, 맥 환경에서 각각 비슷하게 흉내낸 레이아웃을 리맵핑 해 사용하고 있다.<br><img src="/asset/hhkb_layout.png"><br>그냥 해피해킹을 사면 해결되는 일이지만….. 아무튼 키보드 후면의 딥스위치를 사용해 1차적으로 물리적 리맵핑을 하고,<br>나머지는 상단의 brew list에서도 볼 수 있는 karabiner를 사용하고 있다.<br>Vim을 사용하는 일이 많은데 vim은 컨트롤 키를 컨트롤 그대로 인식하기 때문에 karabiner 프로필을 Vim용과 아닌 것으로 두 개 만들었다.<br>차이는 cmd와 ctrl의 스위칭이 있냐 없냐의 차이 뿐이다.</p><h3 id="DIP-switch"><a href="#DIP-switch" class="headerlink" title="DIP switch"></a>DIP switch</h3><p>1번 on: LCtrl &lt;-&gt; CapsLock<br>2번 on: LAlt &lt;-&gt; Win<br>3번 off: Win &lt;-&gt; Fn<br>4번 off: kill win key  </p><h3 id="karabiner-settings"><a href="#karabiner-settings" class="headerlink" title="karabiner settings"></a>karabiner settings</h3><table><thead><tr><th>from key</th><th>to key</th></tr></thead><tbody><tr><td>application</td><td>sticky fn</td></tr><tr><td>backslash \</td><td>delete or backspace</td></tr><tr><td>caps lock</td><td>grave accent and tilde ~</td></tr><tr><td>delete or backspace</td><td>backslash \</td></tr><tr><td>escape</td><td>caps lock</td></tr><tr><td>grave accent and tilde ~</td><td>escape</td></tr><tr><td>right control</td><td>apple vendor keyboard key code language</td></tr></tbody></table><table><thead><tr><th>function keys</th><th>to key</th></tr></thead><tbody><tr><td>f3</td><td>mission control</td></tr><tr><td>f4</td><td>launchpad</td></tr><tr><td>f5</td><td>spotlight</td></tr><tr><td>f10</td><td>mute</td></tr><tr><td>f11</td><td>volume decrement</td></tr><tr><td>f12</td><td>volume increment</td></tr></tbody></table><p>결국 esc자리에 CapsLock이, 백틱 자리에 esc가, CapsLock 자리에 LCtrl이, LCtrl 자리에 백틱이 들어가게 된다.<br>백스페이스도 백슬래시와 스위칭해 이정도면 얼추 해피해킹과 비슷한 레이아웃이 아닌가 싶다.<br>재택 근무라 키보드 하나로 여러 os에 연결해 사용하기 때문에, 사소하게 다른 부분들도 있지만<br>esc, LCtrl, Back Space가 핵심이기 때문에 크게 불만은 없다.<br>다만 레오폴드의 fn키는, 하드웨어 단계에서 F1~F12의 키들과 조합하기 때문에 windows를 제외한<br>linux, mac os에서는 아예 키 입력이 인식조차 되지 않는다.<br>결국 키보드의 키 하나가 죽는 셈인데, 오른쪽 컨트롤 키를 잘 쓰지 않으니 처음에는 우클릭키와 RCtrl을 각각<br>fn키와 언어 변환 키(애플 키보드 보면 지구본 모양인 그 키)로 리맵핑했다.<br>다만 그렇게 리맵핑한 fn키를 누를 때마다 언어 변환도 계속 같이 되는 바람에 fn키는 결국 sticky fn으로 리맵핑하게 되었다.<br>어차피 런치패드와 mission control 외에는 펑션키들을 잘 쓰지 않기도 하고 크게 불편함은 없다.</p>]]></content:encoded>
+      
+      
+      <category domain="https://rvnkcode.github.io/categories/dev/">dev</category>
+      
+      
+      <category domain="https://rvnkcode.github.io/tags/homebrew/">homebrew</category>
+      
+      <category domain="https://rvnkcode.github.io/tags/keyboard/">keyboard</category>
+      
+      <category domain="https://rvnkcode.github.io/tags/remapping/">remapping</category>
+      
+      <category domain="https://rvnkcode.github.io/tags/setup/">setup</category>
+      
+      
+      <comments>https://rvnkcode.github.io/2022/02/09/1_devEnv/#disqus_thread</comments>
+      
+    </item>
+    
+  </channel>
+</rss>

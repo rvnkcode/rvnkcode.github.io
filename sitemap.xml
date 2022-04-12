@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    <sitemap>
+        <loc>https://rvnkcode.github.io/post-sitemap.xml</loc>
+        <lastmod>2022-04-12T12:35:58.217Z</lastmod>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://rvnkcode.github.io/page-sitemap.xml</loc>
+        <lastmod>2022-03-23T11:37:06.512Z</lastmod>
+    </sitemap>
+
+</sitemapindex>
+
