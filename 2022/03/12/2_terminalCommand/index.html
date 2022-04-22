@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>터미널 단축키, 명령어 정리 - 개발괴발</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="개발괴발"><meta name="msapplication-TileImage" content="/img/icon_melon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="개발괴발"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="터미널 단축키iterm2 기준으로 정리했다."><meta property="og:type" content="blog"><meta property="og:title" content="터미널 단축키, 명령어 정리"><meta property="og:url" content="https://rvnkcode.github.io/2022/03/12/2_terminalCommand/"><meta property="og:site_name" content="개발괴발"><meta property="og:description" content="터미널 단축키iterm2 기준으로 정리했다."><meta property="og:locale" content="ko_KR"><meta property="og:image" content="https://rvnkcode.github.io/img/og_image.png"><meta property="article:published_time" content="2022-03-12T10:47:14.000Z"><meta property="article:modified_time" content="2022-04-22T11:46:44.293Z"><meta property="article:author" content="김메로나"><meta property="article:tag" content="terminal"><meta property="article:tag" content="macOS"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://rvnkcode.github.io/2022/03/12/2_terminalCommand/"},"headline":"터미널 단축키, 명령어 정리","image":["https://rvnkcode.github.io/img/og_image.png"],"datePublished":"2022-03-12T10:47:14.000Z","dateModified":"2022-04-22T11:46:44.293Z","author":{"@type":"Person","name":"김메로나"},"publisher":{"@type":"Organization","name":"개발괴발","logo":{"@type":"ImageObject","url":"https://rvnkcode.github.io/img/icon_melon.png"}},"description":"터미널 단축키iterm2 기준으로 정리했다."}</script><link rel="canonical" href="https://rvnkcode.github.io/2022/03/12/2_terminalCommand/"><link rel="icon" href="/img/icon_melon.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+          Array
+              .from(document.querySelectorAll('.tab-content'))
+              .forEach($tab => {
+                  $tab.classList.add('is-hidden');
+              });
+          Array
+              .from(document.querySelectorAll('.tabs li'))
+              .forEach($tab => {
+                  $tab.classList.remove('is-active');
+              });
+          const $activeTab = document.querySelector(location.hash);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+          const $tabMenu = document.querySelector(`a[href="${location.hash}"]`);
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/rss2.xml" title="개발괴발" type="application/rss+xml">
+</head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/icon_melon.png" alt="개발괴발" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" title="Download on GitHub" href="https://github.com/rvnkcode" rel="noopener external nofollow"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="카탈로그" href="javascript:;" rel="noopener external nofollow"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="검색" href="javascript:;" rel="noopener external nofollow"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2022-03-12T10:47:14.000Z" title="3/12/2022, 7:47:14 PM">2022-03-12</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2022-04-22T11:46:44.293Z" title="4/22/2022, 8:46:44 PM">2022-04-22</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/dev/">dev</a></span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>회 방문</span></div></div><h1 class="title is-3 is-size-4-mobile">터미널 단축키, 명령어 정리</h1><div class="content"><h2 id="터미널-단축키"><a href="#터미널-단축키" class="headerlink" title="터미널 단축키"></a>터미널 단축키</h2><p>iterm2 기준으로 정리했다.</p>
+<span id="more"></span>
+
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ctrl+a</td>
+<td>라인 맨 앞으로 이동</td>
+</tr>
+<tr>
+<td>Ctrl+e</td>
+<td>라인 맨 뒤로 이동</td>
+</tr>
+<tr>
+<td>Ctrl+b</td>
+<td>이전 글자로 이동</td>
+</tr>
+<tr>
+<td>Ctrl+f</td>
+<td>이후 글자로 이동</td>
+</tr>
+<tr>
+<td>Ctrl+d</td>
+<td>(입력되어 있는 글자가 있을 경우)커서 오른쪽 한 글자씩 지우기(Delete키와 동일)</td>
+</tr>
+<tr>
+<td>Ctrl+w</td>
+<td>이전 단어 삭제</td>
+</tr>
+<tr>
+<td>Ctrl+u</td>
+<td>라인 맨 처음까지 삭제</td>
+</tr>
+<tr>
+<td>Ctrl+k</td>
+<td>라인 맨 끝까지 삭제</td>
+</tr>
+<tr>
+<td>Ctrl+p</td>
+<td>직전에 입력한 명령어 보기(↑와 동일)</td>
+</tr>
+<tr>
+<td>Ctrl+n</td>
+<td>Ctrl+p의 반대(↓와 동일)</td>
+</tr>
+<tr>
+<td>Ctrl+l</td>
+<td>&#x3D; <code>clear</code></td>
+</tr>
+<tr>
+<td>Ctrl+m</td>
+<td>Enter키와 동일</td>
+</tr>
+<tr>
+<td>Ctrl+c</td>
+<td>현재 실행하고 있는 동작이나 명령을 취소</td>
+</tr>
+</tbody></table>
+<h2 id="터미널-명령어"><a href="#터미널-명령어" class="headerlink" title="터미널 명령어"></a>터미널 명령어</h2><p>mac OS 터미널 명령어로 검색해서 나온 자료를 정리했는데 mac OS가 Unix 기반인지라 명령어 또한<br>리눅스 환경과 맥 환경에서 크게 차이는 없을 것 같다. {}는 변수의 의미.</p>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>ls</code></td>
+<td>현재 경로에 존재하는 파일, 폴더의 목록을 출력</td>
+</tr>
+<tr>
+<td><code>pwd</code></td>
+<td>Print Working Directory. 현재 위치한 경로를 출력</td>
+</tr>
+<tr>
+<td><code>cd &#123;경로&#125;</code></td>
+<td>Change Directory. {경로}로 이동한다.<br /> Documents, Downloads 등 경로 이름이 길다면 <code>cd Doc*, cd Dow*</code> 등으로 활용할 수 있다.</td>
+</tr>
+<tr>
+<td><code>cd ..</code></td>
+<td>상위 폴더로 이동</td>
+</tr>
+<tr>
+<td><code>cd</code></td>
+<td>Home 디렉토리로 이동</td>
+</tr>
+<tr>
+<td><code>pwd</code></td>
+<td>Print Working Directory. 현재 위치한 경로를 출력</td>
+</tr>
+<tr>
+<td><code>touch &#123;파일명.확장자&#125;</code></td>
+<td>해당하는 파일을 생성한다.</td>
+</tr>
+<tr>
+<td><code>mkdir &#123;폴더명&#125;</code></td>
+<td>make directory. 해당하는 폴더를 생성한다.</td>
+</tr>
+<tr>
+<td><code>cat &#123;파일명.확장자&#125;</code></td>
+<td>해당하는 파일의 내용을 터미널 상에 출력한다.</td>
+</tr>
+<tr>
+<td><code>rm &#123;파일명.확장자&#125;</code></td>
+<td>remove. 해당하는 파일을 삭제한다.</td>
+</tr>
+<tr>
+<td><code>rmdir &#123;폴더명&#125;</code></td>
+<td>remove directory. 해당하는 폴더가 빈 폴더일 경우 삭제한다.</td>
+</tr>
+<tr>
+<td><code>rm -r &#123;폴더명&#125;</code></td>
+<td>option: recursive. 해당하는 폴더와 그 안의 파일들까지 삭제한다.</td>
+</tr>
+<tr>
+<td><code>cp &#123;복사하고 싶은 원본 파일의 경로/파일명.확장자&#125; &#123;복사할 곳의 경로/파일명.확장자&#125;</code></td>
+<td>Copy. 해당하는 파일을 해당하는 경로에 복사한다.</td>
+</tr>
+<tr>
+<td><code>mv &#123;이동하고 싶은 원본 파일의 경로/파일명.확장자&#125; &#123;이동할 곳의 경로&#125;</code></td>
+<td>Move. 해당하는 파일을 해당하는 경로로 이동한다.</td>
+</tr>
+<tr>
+<td><code>mv &#123;파일명.확장자&#125; &#123;새로운 파일명.확장자&#125;</code></td>
+<td>해당 파일의 이름을 변경</td>
+</tr>
+<tr>
+<td><code>clear</code></td>
+<td>터미널 상에 출력되었던 모든 내용 지우기.</td>
+</tr>
+<tr>
+<td><code>history</code></td>
+<td>입력했던 명령어의 이력이 번호&#x2F;명령어 형식으로 간략하게 출력된다.<br />여기서 <code>!&#123;번호&#125; &#123;명렁어&#125;</code>형식으로 입력하면 같은 명령어를 재실행 할 수 있다.</td>
+</tr>
+<tr>
+<td><code>man &#123;명령어&#125;</code></td>
+<td>Manual. 입력한 명령어의 매뉴얼을 출력한다.</td>
+</tr>
+</tbody></table>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><a target="_blank" href="https://shared.tistory.com/131" rel="noopener external nofollow">리눅스 터미널 단축키</a><br><a target="_blank" href="https://yozm.wishket.com/magazine/detail/746/" rel="noopener external nofollow">알아두면 유용한 맥 터미널 명령어 모음</a></p>
+</div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/terminal/">terminal</a><a class="link-muted mr-2" rel="tag" href="/tags/macOS/">macOS</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2022/02/09/1_devEnv/"><span class="level-item">mac OS 개발환경 구축하기</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">댓글</h3><div id="comment-container"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css"><script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script><script>var gitalk = new Gitalk({
+            id: "ca1825b3b97a32f33d9d4c0117d4128f",
+            repo: "https://github.com/rvnkcode/rvnkcode.github.io.git",
+            owner: "rvnkcode",
+            clientID: "78d1367e0832fe81cb2b",
+            clientSecret: "b3991ea24570e7ed0ab1075699f88652af8b799a",
+            admin: ["rvnkcode"],
+            createIssueManually: false,
+            distractionFreeMode: false,
+            perPage: 10,
+            pagerDirection: "last",
+            
+            
+            enableHotKey: true,
+            language: "ko-KR",
+        })
+        gitalk.render('comment-container')</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">카탈로그</h3><ul class="menu-list"><li><a class="level is-mobile" href="#터미널-단축키"><span class="level-left"><span class="level-item">1</span><span class="level-item">터미널 단축키</span></span></a></li><li><a class="level is-mobile" href="#터미널-명령어"><span class="level-left"><span class="level-item">2</span><span class="level-item">터미널 명령어</span></span></a></li><li><a class="level is-mobile" href="#References"><span class="level-left"><span class="level-item">3</span><span class="level-item">References</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">카테고리</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/dev/"><span class="level-start"><span class="level-item">dev</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">태그</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/homebrew/"><span class="tag">homebrew</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/keyboard/"><span class="tag">keyboard</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/macOS/"><span class="tag">macOS</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/remapping/"><span class="tag">remapping</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/setup/"><span class="tag">setup</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/terminal/"><span class="tag">terminal</span><span class="tag">2</span></a></div></div></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">최근 글</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-03-12T10:47:14.000Z">2022-03-12</time></p><p class="title"><a href="/2022/03/12/2_terminalCommand/">터미널 단축키, 명령어 정리</a></p><p class="categories"><a href="/categories/dev/">dev</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-02-09T12:47:26.000Z">2022-02-09</time></p><p class="title"><a href="/2022/02/09/1_devEnv/">mac OS 개발환경 구축하기</a></p><p class="categories"><a href="/categories/dev/">dev</a></p></div></article></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/icon_melon.png" alt="개발괴발" height="28"></a><p class="is-size-7"><span>&copy; 2022 김메로나</span>  Powered by <a href="https://hexo.io/" rel="noopener external nofollow" target="_blank">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" rel="noopener external nofollow" target="_blank">Icarus</a><br><span id="busuanzi_container_site_uv"><span id="busuanzi_value_site_uv">0</span>명의 사용자가 방문 함</span></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/" rel="noopener external nofollow"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/" rel="noopener external nofollow"><i class="fab fa-creative-commons-by"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("ko");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><a id="back-to-top" title="맨 위로" href="javascript:;" rel="noopener external nofollow"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="입력 하세요..."></div><a class="searchbox-close" href="javascript:;" rel="noopener external nofollow">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"입력 하세요...","untitled":"(제목 없음)","posts":"포스트","pages":"페이지","categories":"카테고리","tags":"태그"});
+        });</script></body></html>
